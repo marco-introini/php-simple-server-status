@@ -1,0 +1,20 @@
+{
+  "name": "marco-introini/php-simple-server-status",
+  "description": "A very simple package for monitoring a plain PHP server",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Marco Introini",
+      "email": "mint.dev@pm.me",
+      "homepage": "https://marcointroini.it"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload" : {
+    "psr-4": {
+      "MintDev\\SimpleServerStatus\\": "src/Mintdev/SimpleServerStatus/"
+    }
+  }
+}
