@@ -18,7 +18,7 @@ class SimpleServerStatus
         $df = disk_free_space("/");
         $ds = disk_total_space("/");
 
-        $percUtil = floor($df*100/$ds);
+        $percUtil = 100 - floor($df*100/$ds);
 
         return new DiskStats($df,$ds,$percUtil);
     }
